@@ -41,7 +41,6 @@
         <usagename>RTL_FM_Controller_1</usagename>
         <componentproperties>
           <simpleref refid="InputComponentName" value="NOOP"/>
-          <simpleref refid="DomainName" value="REDHAWK_ylb"/>
         </componentproperties>
         <findcomponent>
           <namingservice name="RTL_FM_Controller_1"/>
