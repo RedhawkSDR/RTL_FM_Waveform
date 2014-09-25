@@ -29,9 +29,9 @@ BuildRoot: %{_tmppath}/%{name}-%{version}
 %install
 %__rm -rf $RPM_BUILD_ROOT
 %__mkdir_p "$RPM_BUILD_ROOT%{_prefix}/dom/waveforms/%{name}"
-%__install -m 644 Rtl_FM_Waveform.sad.xml $RPM_BUILD_ROOT%{_prefix}/dom/waveforms/%{name}/Rtl_FM_Waveform.sad.xml
+%__install -m 644 RTL_FM_Waveform.sad.xml $RPM_BUILD_ROOT%{_prefix}/dom/waveforms/%{name}/RTL_FM_Waveform.sad.xml
 
 %files
 %defattr(-,redhawk,redhawk)
 %dir %{_prefix}/dom/waveforms/%{name}
-%{_prefix}/dom/waveforms/%{name}/Rtl_FM_Waveform.sad.xml
+%{_prefix}/dom/waveforms/%{name}/RTL_FM_Waveform.sad.xml
