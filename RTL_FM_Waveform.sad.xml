@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE softwareassembly PUBLIC "-//JTRS//DTD SCA V2.2.2 SAD//EN" "softwareassembly.dtd">
-<softwareassembly id="DCE:1ed946d9-3e77-4acc-8c2c-912641da6545" name="Rtl_FM_Waveform">
+<softwareassembly id="DCE:1ed946d9-3e77-4acc-8c2c-912641da6545" name="RTL_FM_Waveform">
   <componentfiles>
     <componentfile id="TuneFilterDecimate_7d22c4f5-d878-49c8-81ea-531becfd66f5" type="SPD">
       <localfile name="/components/TuneFilterDecimate/TuneFilterDecimate.spd.xml"/>
