@@ -17,7 +17,7 @@ Source: %{name}-%{version}.tar.gz
 # Require the controller whose SPD is referenced
 Requires: RTL_FM_Controller
 # Require each referenced component
-Requires: TuneFilterDecimate RTL_FM_Controller AmFmPmBasebandDemod agc NOOP ScaleOutput
+Requires: TuneFilterDecimate RTL_FM_Controller AmFmPmBasebandDemod agc NOOP ScaleOutput psd
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 

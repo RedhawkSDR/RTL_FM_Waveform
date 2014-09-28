@@ -20,6 +20,9 @@
     <componentfile id="ScaleOutput_e9b7af33-cbd5-4361-b071-14e9752f06e4" type="SPD">
       <localfile name="/components/ScaleOutput/ScaleOutput.spd.xml"/>
     </componentfile>
+    <componentfile id="psd_b0381234-3314-4b84-b2b7-35a209092797" type="SPD">
+      <localfile name="/components/psd/psd.spd.xml"/>
+    </componentfile>
   </componentfiles>
   <partitioning>
     <componentplacement>
@@ -41,6 +44,8 @@
         <usagename>RTL_FM_Controller_1</usagename>
         <componentproperties>
           <simpleref refid="InputComponentName" value="NOOP"/>
+          <simpleref refid="FEIDeviceName" value="RTL2832U"/>
+          <simpleref refid="DomainName" value="REDHAWK_DEV"/>
         </componentproperties>
         <findcomponent>
           <namingservice name="RTL_FM_Controller_1"/>
@@ -99,6 +104,24 @@
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
+    <componentplacement>
+      <componentfileref refid="psd_b0381234-3314-4b84-b2b7-35a209092797"/>
+      <componentinstantiation id="psd_1" startorder="12">
+        <usagename>psd_1</usagename>
+        <findcomponent>
+          <namingservice name="psd_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="psd_b0381234-3314-4b84-b2b7-35a209092797"/>
+      <componentinstantiation id="psd_2" startorder="13">
+        <usagename>psd_2</usagename>
+        <findcomponent>
+          <namingservice name="psd_2"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
   </partitioning>
   <assemblycontroller>
     <componentinstantiationref refid="RTL_FM_Controller_1"/>
@@ -152,6 +175,26 @@
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="ScaleOutput_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_6">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="NOOP_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="psd_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_7">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="agc_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="psd_2"/>
       </providesport>
     </connectinterface>
   </connections>
