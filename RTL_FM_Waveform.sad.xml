@@ -102,6 +102,10 @@
       <componentfileref refid="psd_b0381234-3314-4b84-b2b7-35a209092797"/>
       <componentinstantiation id="psd_1" startorder="12">
         <usagename>psd_1</usagename>
+        <componentproperties>
+          <simpleref refid="numAvg" value="20"/>
+          <simpleref refid="rfFreqUnits" value="true"/>
+        </componentproperties>
         <findcomponent>
           <namingservice name="psd_1"/>
         </findcomponent>
@@ -111,6 +115,9 @@
       <componentfileref refid="psd_b0381234-3314-4b84-b2b7-35a209092797"/>
       <componentinstantiation id="psd_2" startorder="13">
         <usagename>psd_2</usagename>
+        <componentproperties>
+          <simpleref refid="numAvg" value="5"/>
+        </componentproperties>
         <findcomponent>
           <namingservice name="psd_2"/>
         </findcomponent>
