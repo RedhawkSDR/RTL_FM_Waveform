@@ -200,16 +200,6 @@
         <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
       </providesport>
     </connectinterface>
-    <connectinterface id="connection_7">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="ScaleOutput_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="fm_psd"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_5">
       <usesport>
         <usesidentifier>fm_dataFloat_out</usesidentifier>
@@ -238,6 +228,16 @@
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="ScaleOutput_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_7">
+      <usesport>
+        <usesidentifier>fm_dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="fm_psd"/>
       </providesport>
     </connectinterface>
   </connections>
