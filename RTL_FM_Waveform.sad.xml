@@ -20,6 +20,12 @@
     <componentfile id="psd_b0381234-3314-4b84-b2b7-35a209092797" type="SPD">
       <localfile name="/components/psd/psd.spd.xml"/>
     </componentfile>
+    <componentfile id="fastfilter_66b0181b-7f1e-4920-8d79-5e08c9fbed6a" type="SPD">
+      <localfile name="/components/fastfilter/fastfilter.spd.xml"/>
+    </componentfile>
+    <componentfile id="ArbitraryRateResampler_81f3d546-9d03-4e4b-b101-ba766132da33" type="SPD">
+      <localfile name="/components/ArbitraryRateResampler/ArbitraryRateResampler.spd.xml"/>
+    </componentfile>
   </componentfiles>
   <partitioning>
     <componentplacement>
@@ -44,8 +50,7 @@
         <usagename>RTL_FM_Controller_1</usagename>
         <componentproperties>
           <simpleref refid="InputComponentName" value="NOOP"/>
-          <simpleref refid="FEIDeviceName" value="RTL2832U"/>
-          <simpleref refid="DomainName" value="REDHAWK_DEV"/>
+          <simpleref refid="DomainName" value="REDHAWK_ylb"/>
         </componentproperties>
         <findcomponent>
           <namingservice name="RTL_FM_Controller_1"/>
@@ -61,22 +66,6 @@
         </componentproperties>
         <findcomponent>
           <namingservice name="AmFmPmBasebandDemod_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="TuneFilterDecimate_7d22c4f5-d878-49c8-81ea-531becfd66f5"/>
-      <componentinstantiation id="TuneFilterDecimate_2" startorder="7">
-        <usagename>TuneFilterDecimate_2</usagename>
-        <componentproperties>
-          <structref refid="filterProps">
-            <simpleref refid="Ripple" value="0.5"/>
-          </structref>
-          <simpleref refid="FilterBW" value="18000.0"/>
-          <simpleref refid="DesiredOutputRate" value="24000.0"/>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="TuneFilterDecimate_2"/>
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
@@ -138,21 +127,39 @@
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
+    <componentplacement>
+      <componentfileref refid="fastfilter_66b0181b-7f1e-4920-8d79-5e08c9fbed6a"/>
+      <componentinstantiation id="fastfilter_1" startorder="15">
+        <usagename>fastfilter_1</usagename>
+        <componentproperties>
+          <structref refid="filterProps">
+            <simpleref refid="Type" value="lowpass"/>
+            <simpleref refid="Ripple" value="0.5"/>
+            <simpleref refid="freq1" value="16000.0"/>
+          </structref>
+        </componentproperties>
+        <findcomponent>
+          <namingservice name="fastfilter_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="ArbitraryRateResampler_81f3d546-9d03-4e4b-b101-ba766132da33"/>
+      <componentinstantiation id="ArbitraryRateResampler_1" startorder="17">
+        <usagename>ArbitraryRateResampler_1</usagename>
+        <componentproperties>
+          <simpleref refid="outputRate" value="32000.0"/>
+        </componentproperties>
+        <findcomponent>
+          <namingservice name="ArbitraryRateResampler_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
   </partitioning>
   <assemblycontroller>
     <componentinstantiationref refid="RTL_FM_Controller_1"/>
   </assemblycontroller>
   <connections>
-    <connectinterface id="connection_3">
-      <usesport>
-        <usesidentifier>fm_dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_In</providesidentifier>
-        <componentinstantiationref refid="TuneFilterDecimate_2"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_1">
       <usesport>
         <usesidentifier>dataFloat_out</usesidentifier>
@@ -161,16 +168,6 @@
       <providesport>
         <providesidentifier>dataFloat_In</providesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_5">
-      <usesport>
-        <usesidentifier>dataFloat_Out</usesidentifier>
-        <componentinstantiationref refid="TuneFilterDecimate_2"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="ScaleOutput_1"/>
       </providesport>
     </connectinterface>
     <connectinterface id="connection_6">
@@ -211,6 +208,36 @@
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="fm_psd"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_5">
+      <usesport>
+        <usesidentifier>fm_dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="fastfilter_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_3">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="fastfilter_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_9">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="ScaleOutput_1"/>
       </providesport>
     </connectinterface>
   </connections>
