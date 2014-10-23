@@ -14,9 +14,6 @@
     <componentfile id="NOOP_8fada4c5-e51a-4dcb-acb3-6db8a3323891" type="SPD">
       <localfile name="/components/NOOP/NOOP.spd.xml"/>
     </componentfile>
-    <componentfile id="ScaleOutput_e9b7af33-cbd5-4361-b071-14e9752f06e4" type="SPD">
-      <localfile name="/components/ScaleOutput/ScaleOutput.spd.xml"/>
-    </componentfile>
     <componentfile id="psd_b0381234-3314-4b84-b2b7-35a209092797" type="SPD">
       <localfile name="/components/psd/psd.spd.xml"/>
     </componentfile>
@@ -25,6 +22,12 @@
     </componentfile>
     <componentfile id="ArbitraryRateResampler_81f3d546-9d03-4e4b-b101-ba766132da33" type="SPD">
       <localfile name="/components/ArbitraryRateResampler/ArbitraryRateResampler.spd.xml"/>
+    </componentfile>
+    <componentfile id="VorbisEncoder_4d527b5f-350b-414c-a0e5-6079e13daeef" type="SPD">
+      <localfile name="/components/VorbisEncoder/VorbisEncoder.spd.xml"/>
+    </componentfile>
+    <componentfile id="DataConverter_c23b6244-e22f-4aa3-b2bd-99551005b699" type="SPD">
+      <localfile name="/components/DataConverter/DataConverter.spd.xml"/>
     </componentfile>
   </componentfiles>
   <partitioning>
@@ -76,15 +79,6 @@
         <usagename>NOOP_1</usagename>
         <findcomponent>
           <namingservice name="NOOP_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="ScaleOutput_e9b7af33-cbd5-4361-b071-14e9752f06e4"/>
-      <componentinstantiation id="ScaleOutput_1" startorder="11">
-        <usagename>ScaleOutput_1</usagename>
-        <findcomponent>
-          <namingservice name="ScaleOutput_1"/>
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
@@ -156,6 +150,24 @@
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
+    <componentplacement>
+      <componentfileref refid="VorbisEncoder_4d527b5f-350b-414c-a0e5-6079e13daeef"/>
+      <componentinstantiation id="VorbisEncoder_1" startorder="18">
+        <usagename>VorbisEncoder_1</usagename>
+        <findcomponent>
+          <namingservice name="VorbisEncoder_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="DataConverter_c23b6244-e22f-4aa3-b2bd-99551005b699"/>
+      <componentinstantiation id="DataConverter_1" startorder="19">
+        <usagename>DataConverter_1</usagename>
+        <findcomponent>
+          <namingservice name="DataConverter_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
   </partitioning>
   <assemblycontroller>
     <componentinstantiationref refid="RTL_FM_Controller_1"/>
@@ -221,16 +233,6 @@
         <componentinstantiationref refid="ArbitraryRateResampler_1"/>
       </providesport>
     </connectinterface>
-    <connectinterface id="connection_9">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="ScaleOutput_1"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_7">
       <usesport>
         <usesidentifier>fm_dataFloat_out</usesidentifier>
@@ -239,6 +241,26 @@
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="fm_psd"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_10">
+      <usesport>
+        <usesidentifier>dataShort_out</usesidentifier>
+        <componentinstantiationref refid="DataConverter_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataShort_in</providesidentifier>
+        <componentinstantiationref refid="VorbisEncoder_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_8">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat</providesidentifier>
+        <componentinstantiationref refid="DataConverter_1"/>
       </providesport>
     </connectinterface>
   </connections>
