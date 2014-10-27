@@ -263,5 +263,14 @@
         <componentinstantiationref refid="DataConverter_1"/>
       </providesport>
     </connectinterface>
+    <connectinterface id="connection_9">
+      <usesport>
+        <usesidentifier>DomainManager_out</usesidentifier>
+        <componentinstantiationref refid="RTL_FM_Controller_1"/>
+      </usesport>
+      <findby>
+        <domainfinder type="domainmanager"/>
+      </findby>
+    </connectinterface>
   </connections>
 </softwareassembly>
