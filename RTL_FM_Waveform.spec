@@ -15,9 +15,9 @@ License: None
 Group: REDHAWK/Waveforms
 Source: %{name}-%{version}.tar.gz
 # Require the controller whose SPD is referenced
-Requires: RTL_FM_Controller
+Requires: FrontEndController
 # Require each referenced component
-Requires: TuneFilterDecimate RTL_FM_Controller AmFmPmBasebandDemod NOOP psd fastfilter ArbitraryRateResampler VorbisEncoder DataConverter
+Requires: TuneFilterDecimate AmFmPmBasebandDemod NOOP psd fastfilter ArbitraryRateResampler VorbisEncoder DataConverter FrontEndController
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
