@@ -149,6 +149,18 @@
       <componentfileref refid="DataConverter_c23b6244-e22f-4aa3-b2bd-99551005b699"/>
       <componentinstantiation id="DataConverter_1" startorder="19">
         <usagename>DataConverter_1</usagename>
+        <componentproperties>
+          <structref refid="floatingPointRange">
+            <simpleref refid="floatingPointRange::minimum" value="-32000.0"/>
+            <simpleref refid="floatingPointRange::maximum" value="32000.0"/>
+          </structref>
+          <structref refid="scaleOutput">
+            <simpleref refid="scaleOutput::shortPort" value="false"/>
+          </structref>
+          <structref refid="normalize_floating_point">
+            <simpleref refid="normalize_floating_point::input" value="false"/>
+          </structref>
+        </componentproperties>
         <findcomponent>
           <namingservice name="DataConverter_1"/>
         </findcomponent>
@@ -223,26 +235,6 @@
         <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
       </providesport>
     </connectinterface>
-    <connectinterface id="connection_5">
-      <usesport>
-        <usesidentifier>fm_dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="fastfilter_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_3">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="fastfilter_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_7">
       <usesport>
         <usesidentifier>fm_dataFloat_out</usesidentifier>
@@ -263,6 +255,35 @@
         <componentinstantiationref refid="VorbisEncoder_1"/>
       </providesport>
     </connectinterface>
+    <connectinterface id="connection_9">
+      <usesport>
+        <usesidentifier>DomainManager_out</usesidentifier>
+        <componentinstantiationref refid="FrontEndController_1"/>
+      </usesport>
+      <findby>
+        <domainfinder type="domainmanager"/>
+      </findby>
+    </connectinterface>
+    <connectinterface id="connection_3">
+      <usesport>
+        <usesidentifier>fm_dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="fastfilter_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_5">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="fastfilter_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
+      </providesport>
+    </connectinterface>
     <connectinterface id="connection_8">
       <usesport>
         <usesidentifier>dataFloat_out</usesidentifier>
@@ -272,15 +293,6 @@
         <providesidentifier>dataFloat</providesidentifier>
         <componentinstantiationref refid="DataConverter_1"/>
       </providesport>
-    </connectinterface>
-    <connectinterface id="connection_9">
-      <usesport>
-        <usesidentifier>DomainManager_out</usesidentifier>
-        <componentinstantiationref refid="FrontEndController_1"/>
-      </usesport>
-      <findby>
-        <domainfinder type="domainmanager"/>
-      </findby>
     </connectinterface>
   </connections>
 </softwareassembly>

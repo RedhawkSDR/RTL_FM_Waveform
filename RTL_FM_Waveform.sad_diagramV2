@@ -335,7 +335,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_FqkmkkpUEeStDNxi998exQ"/>
     </children>
     <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.6"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fqj_gUpUEeStDNxi998exQ" x="1404" y="216"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fqj_gUpUEeStDNxi998exQ" x="1452" y="240"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_2brLwEpZEeSB9_SAanEwXA" type="3001" fontName="Sans">
     <children xmi:type="notation:DecorationNode" xmi:id="_2bry0EpZEeSB9_SAanEwXA" type="5006"/>
@@ -376,7 +376,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_2bry00pZEeSB9_SAanEwXA"/>
     </children>
     <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.7"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2brLwUpZEeSB9_SAanEwXA" x="1800" y="228"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2brLwUpZEeSB9_SAanEwXA" x="1824" y="264"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_sn9-AFPFEeSOMfPi1Ex_Og" type="3001" fontName="Sans">
     <children xmi:type="notation:DecorationNode" xmi:id="_sn-lEFPFEeSOMfPi1Ex_Og" type="5006"/>
@@ -633,16 +633,6 @@
     <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_4"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1AiRgkj7EeSdasgSvD6-ow" points="[8, 0, -531, -18]$[539, 18, 0, 0]"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_Ho5UcEpUEeStDNxi998exQ" type="4001" source="_p2410Ck5EeSSA99j1Nj67A" target="_Fqo4B0pUEeStDNxi998exQ" routing="Rectilinear" avoidObstructions="true">
-    <styles xmi:type="notation:FontStyle" xmi:id="_Ho5UcUpUEeStDNxi998exQ" fontName="Sans"/>
-    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_5"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ho5UckpUEeStDNxi998exQ" points="[8, -2, -138, 3]$[146, -5, 0, 0]"/>
-  </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_3cvAIEpZEeSB9_SAanEwXA" type="4001" source="_Fqo4AEpUEeStDNxi998exQ" target="_2bxSZ0pZEeSB9_SAanEwXA" routing="Rectilinear" avoidObstructions="true">
-    <styles xmi:type="notation:FontStyle" xmi:id="_3cvnMEpZEeSB9_SAanEwXA" fontName="Sans"/>
-    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_3"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3cvnMUpZEeSB9_SAanEwXA" points="[6, 8, -140, -166]$[146, 174, 0, 0]"/>
-  </edges>
   <edges xmi:type="notation:Connector" xmi:id="_BnLwAEpcEeSvFI0Igk598w" type="4001" source="_p2410Ck5EeSSA99j1Nj67A" target="_lZ8qwkpGEeSLj43eiUbaYA" routing="Rectilinear" avoidObstructions="true">
     <styles xmi:type="notation:FontStyle" xmi:id="_BnMXEEpcEeSvFI0Igk598w" fontName="Sans"/>
     <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_7"/>
@@ -653,15 +643,25 @@
     <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_10"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__UtJ8lPFEeSOMfPi1Ex_Og" points="[8, 5, -127, -88]$[135, 93, 0, 0]"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_Y5RwYFPGEeSOMfPi1Ex_Og" type="4001" source="_2bxSYEpZEeSB9_SAanEwXA" target="_4RHLZ1PFEeSOMfPi1Ex_Og" routing="Rectilinear" avoidObstructions="true">
-    <styles xmi:type="notation:FontStyle" xmi:id="_Y5RwYVPGEeSOMfPi1Ex_Og" fontName="Sans"/>
-    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_8"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Y5RwYlPGEeSOMfPi1Ex_Og" points="[8, -1, -383, 42]$[391, -43, 0, 0]"/>
-  </edges>
   <edges xmi:type="notation:Connector" xmi:id="_7tmf4F7HEeSr76vm4J82Pw" type="4001" source="_3CCvsF7HEeSr76vm4J82Pw" target="_6R4v0V7HEeSr76vm4J82Pw" routing="Rectilinear" avoidObstructions="true">
     <styles xmi:type="notation:FontStyle" xmi:id="_7tmf4V7HEeSr76vm4J82Pw" fontName="Sans"/>
     <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_9"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7tmf4l7HEeSr76vm4J82Pw" points="[6, 0, -151, 8]$[158, -17, 1, -9]"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7tpjMF7HEeSr76vm4J82Pw" id="(0.18556701030927836,0.17647058823529413)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ykOBsGEFEeS7SIO9OCOJlA" type="4001" source="_p2410Ck5EeSSA99j1Nj67A" target="_Fqo4B0pUEeStDNxi998exQ" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ykOBsWEFEeS7SIO9OCOJlA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ykOBsmEFEeS7SIO9OCOJlA" points="[8, 1, -149, -30]$[157, 31, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_y5HToGEFEeS7SIO9OCOJlA" type="4001" source="_Fqo4AEpUEeStDNxi998exQ" target="_2bxSZ0pZEeSB9_SAanEwXA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_y5HToWEFEeS7SIO9OCOJlA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_5"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y5HTomEFEeS7SIO9OCOJlA" points="[8, 2, -139, -40]$[147, 42, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zj1roGEFEeS7SIO9OCOJlA" type="4001" source="_2bxSYEpZEeSB9_SAanEwXA" target="_4RHLZ1PFEeSOMfPi1Ex_Og" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_zj1roWEFEeS7SIO9OCOJlA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_8"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zj1romEFEeS7SIO9OCOJlA" points="[8, -2, -119, 29]$[127, -31, 0, 0]"/>
   </edges>
 </notation:Diagram>
