@@ -20,12 +20,6 @@
     <componentfile id="ArbitraryRateResampler_81f3d546-9d03-4e4b-b101-ba766132da33" type="SPD">
       <localfile name="/components/ArbitraryRateResampler/ArbitraryRateResampler.spd.xml"/>
     </componentfile>
-    <componentfile id="VorbisEncoder_4d527b5f-350b-414c-a0e5-6079e13daeef" type="SPD">
-      <localfile name="/components/VorbisEncoder/VorbisEncoder.spd.xml"/>
-    </componentfile>
-    <componentfile id="DataConverter_c23b6244-e22f-4aa3-b2bd-99551005b699" type="SPD">
-      <localfile name="/components/DataConverter/DataConverter.spd.xml"/>
-    </componentfile>
     <componentfile id="FrontEndController_20247fb0-ceb0-4852-8568-c36ca5ec027a" type="SPD">
       <localfile name="/components/FrontEndController/FrontEndController.spd.xml"/>
     </componentfile>
@@ -137,36 +131,6 @@
       </componentinstantiation>
     </componentplacement>
     <componentplacement>
-      <componentfileref refid="VorbisEncoder_4d527b5f-350b-414c-a0e5-6079e13daeef"/>
-      <componentinstantiation id="VorbisEncoder_1" startorder="18">
-        <usagename>VorbisEncoder_1</usagename>
-        <findcomponent>
-          <namingservice name="VorbisEncoder_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="DataConverter_c23b6244-e22f-4aa3-b2bd-99551005b699"/>
-      <componentinstantiation id="DataConverter_1" startorder="19">
-        <usagename>DataConverter_1</usagename>
-        <componentproperties>
-          <structref refid="floatingPointRange">
-            <simpleref refid="floatingPointRange::minimum" value="-32000.0"/>
-            <simpleref refid="floatingPointRange::maximum" value="32000.0"/>
-          </structref>
-          <structref refid="scaleOutput">
-            <simpleref refid="scaleOutput::shortPort" value="false"/>
-          </structref>
-          <structref refid="normalize_floating_point">
-            <simpleref refid="normalize_floating_point::input" value="false"/>
-          </structref>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="DataConverter_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
       <componentfileref refid="FrontEndController_20247fb0-ceb0-4852-8568-c36ca5ec027a"/>
       <componentinstantiation id="FrontEndController_1" startorder="0">
         <usagename>FrontEndController_1</usagename>
@@ -245,16 +209,6 @@
         <componentinstantiationref refid="fm_psd"/>
       </providesport>
     </connectinterface>
-    <connectinterface id="connection_10">
-      <usesport>
-        <usesidentifier>dataShort_out</usesidentifier>
-        <componentinstantiationref refid="DataConverter_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataShort_in</providesidentifier>
-        <componentinstantiationref refid="VorbisEncoder_1"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_9">
       <usesport>
         <usesidentifier>DomainManager_out</usesidentifier>
@@ -282,16 +236,6 @@
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="ArbitraryRateResampler_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_8">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="ArbitraryRateResampler_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat</providesidentifier>
-        <componentinstantiationref refid="DataConverter_1"/>
       </providesport>
     </connectinterface>
   </connections>
