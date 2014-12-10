@@ -422,11 +422,436 @@
     <children xmi:type="notation:DecorationNode" xmi:id="_6R4v1l7HEeSr76vm4J82Pw" type="15018"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6R4v0l7HEeSr76vm4J82Pw" x="288"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_7oK8EH_eEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7oLjIH_eEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7oLjIX_eEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_7oMKMH_eEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_7oMKMn_eEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_7oMxQH_eEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_7oMxRX_eEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7oMxRn_eEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_7oMxQX_eEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7oMxQn_eEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_7oMxQ3_eEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.9/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7oMxRH_eEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7oMxR3_eEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_7oMxTH_eEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7oMxTX_eEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_7oMxSH_eEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7oMxSX_eEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_7oMxSn_eEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.9/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7oMxS3_eEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7oMxTn_eEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_7oMxT3_eEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7oMxUH_eEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_7oMxUX_eEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.9/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7oMxUn_eEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#FilterDecimate_1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7oMKMX_eEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7oLjIn_eEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7oLjI3_eEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7oK8EX_eEeSzj-nGwxxCbA" x="1398" y="521"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7-qwgH_eEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7-rXkH_eEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7-rXkX_eEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_7-tz0H_eEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_7-ua4X_eEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_7-vB8H_eEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_7-vB9X_eEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7-vB9n_eEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_7-vB8X_eEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7-vB8n_eEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_7-vB83_eEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.10/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7-vB9H_eEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7-vB93_eEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_7-vpBH_eEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7-vpBX_eEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_7-vpAH_eEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7-vpAX_eEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_7-vpAn_eEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.10/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7-vpA3_eEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7-vpBn_eEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_7-vpB3_eEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7-vpCH_eEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_7-vpCX_eEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.10/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7-vpCn_eEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#FilterDecimate_2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7-ua4H_eEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7-rXkn_eEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7-rXk3_eEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.10"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7-qwgX_eEeSzj-nGwxxCbA" x="1392" y="720"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_dgux8H_fEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dgux8n_fEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dgux83_fEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_dgwAEH_fEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_dgwAEn_fEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_dgwnIH_fEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dgwnJX_fEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dgwnJn_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dgwnIX_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dgwnIn_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_dgwnI3_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgwnJH_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dgwnJ3_fEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dgwnLH_fEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dgwnLX_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dgwnKH_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dgwnKX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_dgwnKn_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgwnK3_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dgwnLn_fEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dgwnM3_fEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dgwnNH_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dgwnL3_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dgwnMH_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_dgwnMX_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11/@componentInstantiation.0/@provides.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgwnMn_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dgwnNX_fEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dgwnOn_fEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dgwnO3_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dgwnNn_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dgwnN3_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_dgwnOH_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11/@componentInstantiation.0/@provides.2"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgwnOX_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dgxOMH_fEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dgxONX_fEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dgxONn_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dgxOMX_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dgxOMn_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_dgxOM3_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11/@componentInstantiation.0/@provides.3"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgxONH_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dgxON3_fEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dgxOOH_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dgxOOX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_dgxOOn_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgxOO3_fEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#Mixer_1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgwAEX_fEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dgux9H_fEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dgux9X_fEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.11"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgux8X_fEeSzj-nGwxxCbA" x="1728" y="528"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_n0VvwH_fEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_n0Vvwn_fEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_n0Vvw3_fEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_n0WW0H_fEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_n0WW0n_fEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_n0W94H_fEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_n0W95X_fEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_n0W95n_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_n0W94X_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_n0W94n_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_n0W943_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.12/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n0W95H_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_n0W953_fEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_n0Xk8H_fEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_n0Xk8X_fEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_n0W96H_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_n0W96X_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_n0W96n_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.12/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n0W963_fEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_n0Xk8n_fEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_n0Xk83_fEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_n0Xk9H_fEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_n0Xk9X_fEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.12/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n0Xk9n_fEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#FrequencyDivider_1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n0WW0X_fEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n0VvxH_fEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n0VvxX_fEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.12"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n0VvwX_fEeSzj-nGwxxCbA" x="1728" y="720"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_m4CUAH_pEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_m4CUAn_pEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_m4CUA3_pEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_2uTCEH_pEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_2uTCEn_pEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_2uTpIH_pEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_2uTpJX_pEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2uTpJn_pEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_2uTpIX_pEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uTpIn_pEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_2uTpI3_pEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.13/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uTpJH_pEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_2uTpJ3_pEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_2uUQMH_pEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2uUQMX_pEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_2uTpKH_pEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uTpKX_pEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_2uTpKn_pEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.13/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uTpK3_pEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_2uUQMn_pEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_2uUQM3_pEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uUQNH_pEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_2uUQNX_pEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.13/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUQNn_pEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#FilterDecimate_3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uTCEX_pEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_m4CUBH_pEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_m4CUBX_pEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.13"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m4CUAX_pEeSzj-nGwxxCbA" x="2064" y="528"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7ZJAkH_pEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZJnoH_pEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZJnoX_pEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_Uy-hMH_rEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Uy-hMn_rEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_Uy_IQH_rEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Uy_IRX_rEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Uy_IRn_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_Uy_IQX_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Uy_IQn_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_Uy_IQ3_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.14/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uy_IRH_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Uy_IR3_rEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Uy_vUX_rEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Uy_vUn_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_Uy_ISH_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Uy_ISX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_Uy_ISn_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.14/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uy_vUH_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Uy_vU3_rEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_Uy_vVH_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Uy_vVX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_Uy_vVn_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.14/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uy_vV3_rEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#FilterDecimate_4"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uy-hMX_rEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7ZJnon_pEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7ZJno3_pEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.14"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ZJAkX_pEeSzj-nGwxxCbA" x="2064" y="720"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eGFEQH_rEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eGFEQn_rEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_eGFEQ3_rEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_eGFrUH_rEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_eGFrUn_rEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_eGGSYH_rEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_eGGSZX_rEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eGGSZn_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_eGGSYX_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eGGSYn_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_eGGSY3_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.15/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eGGSZH_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eGG5cH_rEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_eGG5dX_rEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eGG5dn_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_eGG5cX_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eGG5cn_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_eGG5c3_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.15/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eGG5dH_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eGG5d3_rEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_eGG5fH_rEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eGG5fX_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_eGG5eH_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eGG5eX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_eGG5en_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.15/@componentInstantiation.0/@provides.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eGG5e3_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eGG5fn_rEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_eGG5f3_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eGG5gH_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_eGG5gX_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.15/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eGG5gn_rEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#BPSK_1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eGFrUX_rEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eGFERH_rEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eGFERX_rEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.15"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eGFEQX_rEeSzj-nGwxxCbA" x="2496" y="528"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_qocYoH_rEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_qocYon_rEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_qocYo3_rEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_qoc_sH_rEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_qoc_sn_rEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_qodmwH_rEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_qodmxX_rEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_qodmxn_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_qodmwX_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_qodmwn_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_qodmw3_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.16/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qodmxH_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_qoeN0H_rEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_qoeN1X_rEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_qoeN1n_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_qoeN0X_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_qoeN0n_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_qoeN03_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.16/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoeN1H_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_qoeN13_rEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_qoeN2H_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_qoeN2X_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_qoeN2n_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.16/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoeN23_rEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#DifferentialDecoder_1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoc_sX_rEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qocYpH_rEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qocYpX_rEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.16"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qocYoX_rEeSzj-nGwxxCbA" x="2928" y="528"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_wVpMAH_rEeSzj-nGwxxCbA" type="3001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wVpzEH_rEeSzj-nGwxxCbA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_wVpzEX_rEeSzj-nGwxxCbA" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_wVqaIH_rEeSzj-nGwxxCbA" type="3002" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_wVqaIn_rEeSzj-nGwxxCbA" type="5004"/>
+        <children xmi:type="notation:Node" xmi:id="_wVrBMH_rEeSzj-nGwxxCbA" type="3003">
+          <children xmi:type="notation:DecorationNode" xmi:id="_wVrBNX_rEeSzj-nGwxxCbA" type="5001">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wVrBNn_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_wVrBMX_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wVrBMn_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_wVrBM3_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:UsesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.17/@componentInstantiation.0/@uses.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wVrBNH_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wVrBN3_rEeSzj-nGwxxCbA" type="3004">
+          <children xmi:type="notation:DecorationNode" xmi:id="_wVrBPH_rEeSzj-nGwxxCbA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wVrBPX_rEeSzj-nGwxxCbA" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_wVrBOH_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wVrBOX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_wVrBOn_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ProvidesPortStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.17/@componentInstantiation.0/@provides.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wVrBO3_rEeSzj-nGwxxCbA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wVrBPn_rEeSzj-nGwxxCbA" type="3005">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_wVrBP3_rEeSzj-nGwxxCbA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wVrBQH_rEeSzj-nGwxxCbA" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_wVrBQX_rEeSzj-nGwxxCbA"/>
+          <element xmi:type="partitioning:ComponentSupportedInterfaceStub" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.17/@componentInstantiation.0/@interfaceStub"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wVrBQn_rEeSzj-nGwxxCbA"/>
+        </children>
+        <element xmi:type="sad:SadComponentInstantiation" href="RTL_FM_Waveform.sad.xml#RBDSDecoder_1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wVqaIX_rEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wVpzEn_rEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wVpzE3_rEeSzj-nGwxxCbA"/>
+    </children>
+    <element xmi:type="sad:SadComponentPlacement" href="RTL_FM_Waveform.sad.xml#//@partitioning/@componentPlacement.17"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wVpMAX_rEeSzj-nGwxxCbA" x="3312" y="528"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_0k1wUH_rEeSzj-nGwxxCbA" type="12002" element="_0k1JQH_rEeSzj-nGwxxCbA" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_0k1wUn_rEeSzj-nGwxxCbA" type="17005">
+      <children xmi:type="notation:Shape" xmi:id="_3_jjsH_rEeSzj-nGwxxCbA" type="13012" element="_3_i8oH_rEeSzj-nGwxxCbA" fontName="Sans">
+        <children xmi:type="notation:DecorationNode" xmi:id="_3_jjsn_rEeSzj-nGwxxCbA" type="15014"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3_jjs3_rEeSzj-nGwxxCbA" type="15015"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3_jjsX_rEeSzj-nGwxxCbA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_0k1wU3_rEeSzj-nGwxxCbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_0k1wVH_rEeSzj-nGwxxCbA"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0k2XYH_rEeSzj-nGwxxCbA" type="15018"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0k1wUX_rEeSzj-nGwxxCbA" x="3696" y="576"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_RqA7YB8jEeSaiIJdkg1J9Q"/>
   <styles xmi:type="diagram:EObjectContainerStyle" xmi:id="_RqA7YR8jEeSaiIJdkg1J9Q" name="FindByStubContainer">
     <value xmi:type="partitioning:FindByStubContainer" xmi:id="_QOxSUCkcEeSSA99j1Nj67A">
       <stubs xmi:type="partitioning:FindByStub" xmi:id="_6R4v0F7HEeSr76vm4J82Pw">
         <domainFinder xmi:type="partitioning:DomainFinder" xmi:id="_6lVQQF7HEeSr76vm4J82Pw" type="domainmanager"/>
+      </stubs>
+      <stubs xmi:type="partitioning:FindByStub" xmi:id="_0k1JQH_rEeSzj-nGwxxCbA">
+        <domainFinder xmi:type="partitioning:DomainFinder" xmi:id="_3_i8oH_rEeSzj-nGwxxCbA" name="RBDS_Channel" type="eventchannel"/>
       </stubs>
     </value>
   </styles>
@@ -471,5 +896,76 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_y5HToWEFEeS7SIO9OCOJlA" fontName="Sans"/>
     <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_5"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y5HTomEFEeS7SIO9OCOJlA" points="[8, 2, -139, -40]$[147, 42, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZXUskH_fEeSzj-nGwxxCbA" type="4001" source="_p2410Ck5EeSSA99j1Nj67A" target="_7oMxR3_eEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZXUskX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_8"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZXUskn_fEeSzj-nGwxxCbA" points="[2, 6, -75, -228]$[77, 234, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_aZTG8H_fEeSzj-nGwxxCbA" type="4001" source="_p2410Ck5EeSSA99j1Nj67A" target="_7-vB93_eEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_aZTG8X_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_10"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aZTG8n_fEeSzj-nGwxxCbA" points="[1, 6, -72, -377]$[73, 383, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_gpbBMH_fEeSzj-nGwxxCbA" type="4001" source="_7oMxQH_eEeSzj-nGwxxCbA" target="_dgxOMH_fEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_gpbBMX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_11"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gpbBMn_fEeSzj-nGwxxCbA" points="[6, -2, -73, 16]$[79, -18, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_jpEpMH_fEeSzj-nGwxxCbA" type="4001" source="_7-vB8H_eEeSzj-nGwxxCbA" target="_dgwnNX_fEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_jpEpMX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_12"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jpEpMn_fEeSzj-nGwxxCbA" points="[4, -6, -79, 108]$[83, -114, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_j8waMH_fEeSzj-nGwxxCbA" type="4001" source="_7-vB8H_eEeSzj-nGwxxCbA" target="_dgwnLn_fEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_j8waMX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_13"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_j8waMn_fEeSzj-nGwxxCbA" points="[5, -6, -78, 90]$[83, -96, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_kPzSAH_fEeSzj-nGwxxCbA" type="4001" source="_7-vB8H_eEeSzj-nGwxxCbA" target="_dgwnJ3_fEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_kPzSAX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_14"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kPzSAn_fEeSzj-nGwxxCbA" points="[5, -6, -78, 73]$[83, -79, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_pHs1EH_fEeSzj-nGwxxCbA" type="4001" source="_7-vB8H_eEeSzj-nGwxxCbA" target="_n0W953_fEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_pHs1EX_fEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_15"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pHs1En_fEeSzj-nGwxxCbA" points="[5, 0, -114, -13]$[119, 13, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5SD_UH_pEeSzj-nGwxxCbA" type="4001" source="_dgwnIH_fEeSzj-nGwxxCbA" target="_2uTpJ3_pEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_5SD_UX_pEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_16"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5SD_Un_pEeSzj-nGwxxCbA" points="[6, 1, -72, -12]$[78, 13, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_bzuAEH_rEeSzj-nGwxxCbA" type="4001" source="_n0W94H_fEeSzj-nGwxxCbA" target="_Uy_IR3_rEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_bzuAEX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_17"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bzuAEn_rEeSzj-nGwxxCbA" points="[6, 1, -45, -12]$[51, 13, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mDrM8H_rEeSzj-nGwxxCbA" type="4001" source="_Uy_IQH_rEeSzj-nGwxxCbA" target="_eGG5d3_rEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_mDrM8X_rEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_18"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mDrM8n_rEeSzj-nGwxxCbA" points="[-4, -9, -230, 209]$[226, -218, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mUP_kH_rEeSzj-nGwxxCbA" type="4001" source="_2uTpIH_pEeSzj-nGwxxCbA" target="_eGG5cH_rEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_mUP_kX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_19"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mUP_kn_rEeSzj-nGwxxCbA" points="[9, 2, -183, -49]$[192, 51, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_txz9UH_rEeSzj-nGwxxCbA" type="4001" source="_eGGSYH_rEeSzj-nGwxxCbA" target="_qoeN0H_rEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_txz9UX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_20"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_txz9Un_rEeSzj-nGwxxCbA" points="[10, 1, -240, -21]$[250, 22, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yGQOAH_rEeSzj-nGwxxCbA" type="4001" source="_qodmwH_rEeSzj-nGwxxCbA" target="_wVrBN3_rEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yGQOAX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_21"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yGQOAn_rEeSzj-nGwxxCbA" points="[9, 1, -123, -21]$[132, 22, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-dw9QH_rEeSzj-nGwxxCbA" type="4001" source="_wVrBMH_rEeSzj-nGwxxCbA" target="_0k1wUH_rEeSzj-nGwxxCbA" routing="Rectilinear" avoidObstructions="true">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-dw9QX_rEeSzj-nGwxxCbA" fontName="Sans"/>
+    <element xmi:type="sad:SadConnectInterface" href="RTL_FM_Waveform.sad.xml#connection_22"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-dw9Qn_rEeSzj-nGwxxCbA" points="[8, -2, -120, 0]$[122, -4, -6, -2]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-dzZgH_rEeSzj-nGwxxCbA" id="(0.02575107296137339,0.20588235294117646)"/>
   </edges>
 </notation:Diagram>
