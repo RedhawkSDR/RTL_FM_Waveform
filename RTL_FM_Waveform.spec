@@ -9,7 +9,7 @@ Prefix: %{_prefix}
 
 Name: RTL_FM_Waveform
 Summary: Waveform RTL_FM_Waveform
-Version: 1.0.0
+Version: 1.1.0
 Release: 1
 License: None
 Group: REDHAWK/Waveforms
