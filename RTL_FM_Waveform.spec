@@ -9,7 +9,7 @@ Prefix: %{_prefix}
 
 Name: RTL_FM_Waveform
 Summary: Waveform RTL_FM_Waveform
-Version: 1.1.0
+Version: 1.0.0
 Release: 1
 License: None
 Group: REDHAWK/Waveforms
@@ -17,7 +17,7 @@ Source: %{name}-%{version}.tar.gz
 # Require the controller whose SPD is referenced
 Requires: FrontEndController
 # Require each referenced component
-Requires: TuneFilterDecimate NOOP psd fastfilter ArbitraryRateResampler FrontEndController FilterDecimate Mixer FrequencyDivider BPSK DifferentialDecoder RBDSDecoder AmFmPmBasebandDemod
+Requires: TuneFilterDecimate NOOP psd fastfilter ArbitraryRateResampler FrontEndController RBDSDecoder AmFmPmBasebandDemod psk_soft DifferentialDecoder
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 

@@ -20,26 +20,17 @@
     <componentfile id="FrontEndController_20247fb0-ceb0-4852-8568-c36ca5ec027a" type="SPD">
       <localfile name="/components/FrontEndController/FrontEndController.spd.xml"/>
     </componentfile>
-    <componentfile id="FilterDecimate_6061532e-c294-48a5-b006-b79776561884" type="SPD">
-      <localfile name="/components/FilterDecimate/FilterDecimate.spd.xml"/>
-    </componentfile>
-    <componentfile id="Mixer_cbe93b1c-4afb-4591-8c2b-4c1583ccbbc0" type="SPD">
-      <localfile name="/components/Mixer/Mixer.spd.xml"/>
-    </componentfile>
-    <componentfile id="FrequencyDivider_c3a37df0-e7ce-4df3-aa1a-1b52a8bfc3d2" type="SPD">
-      <localfile name="/components/FrequencyDivider/FrequencyDivider.spd.xml"/>
-    </componentfile>
-    <componentfile id="BPSK_ba420298-3db4-493e-88eb-895dcfe57f92" type="SPD">
-      <localfile name="/components/BPSK/BPSK.spd.xml"/>
-    </componentfile>
-    <componentfile id="DifferentialDecoder_eae692a0-60e5-4573-87ef-6c278e207d17" type="SPD">
-      <localfile name="/components/DifferentialDecoder/DifferentialDecoder.spd.xml"/>
-    </componentfile>
     <componentfile id="RBDSDecoder_727eeaf0-79a0-48c8-a5aa-d6203c1dd40d" type="SPD">
       <localfile name="/components/RBDSDecoder/RBDSDecoder.spd.xml"/>
     </componentfile>
     <componentfile id="AmFmPmBasebandDemod_960adfc0-8508-4e7b-a0ba-b2f1c53e7746" type="SPD">
       <localfile name="/components/AmFmPmBasebandDemod/AmFmPmBasebandDemod.spd.xml"/>
+    </componentfile>
+    <componentfile id="psk_soft_a7a4b6fe-33de-4bb5-8c30-656b8c04d442" type="SPD">
+      <localfile name="/components/psk_soft/psk_soft.spd.xml"/>
+    </componentfile>
+    <componentfile id="DifferentialDecoder_e161743c-f4f0-45e6-8797-5514d2d57ddc" type="SPD">
+      <localfile name="/components/DifferentialDecoder/DifferentialDecoder.spd.xml"/>
     </componentfile>
   </componentfiles>
   <partitioning>
@@ -161,110 +152,11 @@
       </componentinstantiation>
     </componentplacement>
     <componentplacement>
-      <componentfileref refid="FilterDecimate_6061532e-c294-48a5-b006-b79776561884"/>
-      <componentinstantiation id="FilterDecimate_1" startorder="21">
-        <usagename>RBDS Filter</usagename>
-        <componentproperties>
-          <simpleref refid="Center Frequency" value="57000.0"/>
-          <simpleref refid="Number of Taps" value="100"/>
-          <simpleref refid="Output Rate" value="128000.0"/>
-          <simpleref refid="Filter Type" value="bandpass"/>
-          <simpleref refid="Bandwidth" value="6000.0"/>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="FilterDecimate_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="Mixer_cbe93b1c-4afb-4591-8c2b-4c1583ccbbc0"/>
-      <componentinstantiation id="Mixer_1" startorder="23">
-        <usagename>Mixer_1</usagename>
-        <findcomponent>
-          <namingservice name="Mixer_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="FrequencyDivider_c3a37df0-e7ce-4df3-aa1a-1b52a8bfc3d2"/>
-      <componentinstantiation id="FrequencyDivider_1" startorder="24">
-        <usagename>FrequencyDivider_1</usagename>
-        <componentproperties>
-          <simpleref refid="Divisor" value="16"/>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="FrequencyDivider_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="FilterDecimate_6061532e-c294-48a5-b006-b79776561884"/>
-      <componentinstantiation id="FilterDecimate_3" startorder="25">
-        <usagename>Baseband RBDS Filter</usagename>
-        <componentproperties>
-          <simpleref refid="Number of Taps" value="100"/>
-          <simpleref refid="Output Rate" value="16000.0"/>
-          <simpleref refid="Bandwidth" value="1500.0"/>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="FilterDecimate_3"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="FilterDecimate_6061532e-c294-48a5-b006-b79776561884"/>
-      <componentinstantiation id="FilterDecimate_4" startorder="26">
-        <usagename>RBDS Clock Filter</usagename>
-        <componentproperties>
-          <simpleref refid="Number of Taps" value="100"/>
-          <simpleref refid="Output Rate" value="16000.0"/>
-          <simpleref refid="Bandwidth" value="1200.0"/>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="FilterDecimate_4"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="BPSK_ba420298-3db4-493e-88eb-895dcfe57f92"/>
-      <componentinstantiation id="BPSK_1" startorder="27">
-        <usagename>BPSK_1</usagename>
-        <findcomponent>
-          <namingservice name="BPSK_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="DifferentialDecoder_eae692a0-60e5-4573-87ef-6c278e207d17"/>
-      <componentinstantiation id="DifferentialDecoder_1" startorder="28">
-        <usagename>DifferentialDecoder_1</usagename>
-        <findcomponent>
-          <namingservice name="DifferentialDecoder_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
       <componentfileref refid="RBDSDecoder_727eeaf0-79a0-48c8-a5aa-d6203c1dd40d"/>
       <componentinstantiation id="RBDSDecoder_1" startorder="29">
         <usagename>RBDSDecoder_1</usagename>
         <findcomponent>
           <namingservice name="RBDSDecoder_1"/>
-        </findcomponent>
-      </componentinstantiation>
-    </componentplacement>
-    <componentplacement>
-      <componentfileref refid="FilterDecimate_6061532e-c294-48a5-b006-b79776561884"/>
-      <componentinstantiation id="FilterDecimate_2" startorder="31">
-        <usagename>Pilot Filter</usagename>
-        <componentproperties>
-          <simpleref refid="Center Frequency" value="19000.0"/>
-          <simpleref refid="Number of Taps" value="100"/>
-          <simpleref refid="Output Rate" value="128000.0"/>
-          <simpleref refid="Filter Type" value="bandpass"/>
-          <simpleref refid="Bandwidth" value="1000.0"/>
-        </componentproperties>
-        <findcomponent>
-          <namingservice name="FilterDecimate_2"/>
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
@@ -277,6 +169,44 @@
         </componentproperties>
         <findcomponent>
           <namingservice name="AmFmPmBasebandDemod_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="TuneFilterDecimate_7d22c4f5-d878-49c8-81ea-531becfd66f5"/>
+      <componentinstantiation id="TuneFilterDecimate_2" startorder="33">
+        <usagename>TuneFilterDecimate_2</usagename>
+        <componentproperties>
+          <simpleref refid="TuningIF" value="57000.0"/>
+          <simpleref refid="FilterBW" value="4000.0"/>
+          <simpleref refid="TuneMode" value="IF"/>
+          <simpleref refid="DesiredOutputRate" value="9500.0"/>
+        </componentproperties>
+        <findcomponent>
+          <namingservice name="TuneFilterDecimate_2"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="psk_soft_a7a4b6fe-33de-4bb5-8c30-656b8c04d442"/>
+      <componentinstantiation id="psk_soft_1" startorder="34">
+        <usagename>psk_soft_1</usagename>
+        <componentproperties>
+          <simpleref refid="samplesPerBaud" value="8"/>
+          <simpleref refid="constelationSize" value="2"/>
+          <simpleref refid="phaseAvg" value="100"/>
+        </componentproperties>
+        <findcomponent>
+          <namingservice name="psk_soft_1"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="DifferentialDecoder_e161743c-f4f0-45e6-8797-5514d2d57ddc"/>
+      <componentinstantiation id="DifferentialDecoder_1" startorder="35">
+        <usagename>DifferentialDecoder_1</usagename>
+        <findcomponent>
+          <namingservice name="DifferentialDecoder_1"/>
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
@@ -334,76 +264,6 @@
         <componentinstantiationref refid="ArbitraryRateResampler_1"/>
       </providesport>
     </connectinterface>
-    <connectinterface id="connection_11">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat4_in</providesidentifier>
-        <componentinstantiationref refid="Mixer_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_16">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="Mixer_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="FilterDecimate_3"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_17">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FrequencyDivider_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="FilterDecimate_4"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_18">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_4"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>clockFloat_in</providesidentifier>
-        <componentinstantiationref refid="BPSK_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_19">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_3"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="BPSK_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_20">
-      <usesport>
-        <usesidentifier>dataShort_out</usesidentifier>
-        <componentinstantiationref refid="BPSK_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataShort_in</providesidentifier>
-        <componentinstantiationref refid="DifferentialDecoder_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_21">
-      <usesport>
-        <usesidentifier>dataShort_out</usesidentifier>
-        <componentinstantiationref refid="DifferentialDecoder_1"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataShort_in</providesidentifier>
-        <componentinstantiationref refid="RBDSDecoder_1"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_22">
       <usesport>
         <usesidentifier>messageEvent_out</usesidentifier>
@@ -412,46 +272,6 @@
       <findby>
         <domainfinder name="RBDS_Channel" type="eventchannel"/>
       </findby>
-    </connectinterface>
-    <connectinterface id="connection_12">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_2"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat3_in</providesidentifier>
-        <componentinstantiationref refid="Mixer_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_13">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_2"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat2_in</providesidentifier>
-        <componentinstantiationref refid="Mixer_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_14">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_2"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat1_in</providesidentifier>
-        <componentinstantiationref refid="Mixer_1"/>
-      </providesport>
-    </connectinterface>
-    <connectinterface id="connection_15">
-      <usesport>
-        <usesidentifier>dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="FilterDecimate_2"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="FrequencyDivider_1"/>
-      </providesport>
     </connectinterface>
     <connectinterface id="connection_3">
       <usesport>
@@ -489,18 +309,38 @@
         <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
       </usesport>
       <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="FilterDecimate_1"/>
+        <providesidentifier>dataFloat_In</providesidentifier>
+        <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </providesport>
     </connectinterface>
     <connectinterface id="connection_10">
       <usesport>
-        <usesidentifier>fm_dataFloat_out</usesidentifier>
-        <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
+        <usesidentifier>dataFloat_Out</usesidentifier>
+        <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </usesport>
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="FilterDecimate_2"/>
+        <componentinstantiationref refid="psk_soft_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_11">
+      <usesport>
+        <usesidentifier>dataShort_out</usesidentifier>
+        <componentinstantiationref refid="psk_soft_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataShort_in</providesidentifier>
+        <componentinstantiationref refid="DifferentialDecoder_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_12">
+      <usesport>
+        <usesidentifier>dataShort_out</usesidentifier>
+        <componentinstantiationref refid="DifferentialDecoder_1"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataShort_in</providesidentifier>
+        <componentinstantiationref refid="RBDSDecoder_1"/>
       </providesport>
     </connectinterface>
   </connections>
