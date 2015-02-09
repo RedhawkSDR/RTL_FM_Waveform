@@ -138,7 +138,7 @@
             <simpleref refid="outputPortName" value="dataFloat_out"/>
           </structref>
           <structref refid="TuneRequest">
-            <simpleref refid="frequency" value="88.5"/>
+            <simpleref refid="frequency" value="100.1"/>
             <simpleref refid="sampleRate" value="2.0"/>
           </structref>
           <simpleref refid="tunerType" value="RX_DIGITIZER"/>
