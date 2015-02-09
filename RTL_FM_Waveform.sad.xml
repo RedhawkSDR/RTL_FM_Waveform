@@ -29,9 +29,6 @@
     <componentfile id="psk_soft_a7a4b6fe-33de-4bb5-8c30-656b8c04d442" type="SPD">
       <localfile name="/components/psk_soft/psk_soft.spd.xml"/>
     </componentfile>
-    <componentfile id="DifferentialDecoder_e161743c-f4f0-45e6-8797-5514d2d57ddc" type="SPD">
-      <localfile name="/components/DifferentialDecoder/DifferentialDecoder.spd.xml"/>
-    </componentfile>
   </componentfiles>
   <partitioning>
     <componentplacement>
@@ -192,6 +189,7 @@
       <componentinstantiation id="psk_soft_1" startorder="34">
         <usagename>psk_soft_1</usagename>
         <componentproperties>
+          <simpleref refid="differentialDecoding" value="true"/>
           <simpleref refid="samplesPerBaud" value="8"/>
           <simpleref refid="constelationSize" value="2"/>
           <simpleref refid="phaseAvg" value="100"/>
@@ -202,11 +200,48 @@
       </componentinstantiation>
     </componentplacement>
     <componentplacement>
-      <componentfileref refid="DifferentialDecoder_e161743c-f4f0-45e6-8797-5514d2d57ddc"/>
-      <componentinstantiation id="DifferentialDecoder_1" startorder="35">
-        <usagename>DifferentialDecoder_1</usagename>
+      <componentfileref refid="fastfilter_66b0181b-7f1e-4920-8d79-5e08c9fbed6a"/>
+      <componentinstantiation id="fastfilter_2" startorder="35">
+        <usagename>MatchedFilter</usagename>
+        <componentproperties>
+          <simplesequenceref refid="realFilterCoefficients">
+            <values>
+              <value>-4.17856731714e-18</value>
+              <value>0.00391067678624</value>
+              <value>6.82484994444e-18</value>
+              <value>-0.00633157193963</value>
+              <value>1.62006669626e-17</value>
+              <value>0.0113063784636</value>
+              <value>-7.01900795452e-17</value>
+              <value>-0.0235172672043</value>
+              <value>5.45908246266e-17</value>
+              <value>0.0646724848119</value>
+              <value>-1.12105278128e-16</value>
+              <value>-0.388034908872</value>
+              <value>-1.0</value>
+              <value>-1.35812218105</value>
+              <value>-1.0</value>
+              <value>0.0</value>
+              <value>1.0</value>
+              <value>1.35812218105</value>
+              <value>1.0</value>
+              <value>0.388034908872</value>
+              <value>1.12105278128e-16</value>
+              <value>-0.0646724848119</value>
+              <value>-5.45908246266e-17</value>
+              <value>0.0235172672043</value>
+              <value>7.01900795452e-17</value>
+              <value>-0.0113063784636</value>
+              <value>-1.62006669626e-17</value>
+              <value>0.00633157193963</value>
+              <value>-6.82484994444e-18</value>
+              <value>-0.00391067678624</value>
+              <value>4.17856731714e-18</value>
+            </values>
+          </simplesequenceref>
+        </componentproperties>
         <findcomponent>
-          <namingservice name="DifferentialDecoder_1"/>
+          <namingservice name="fastfilter_2"/>
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
@@ -313,16 +348,6 @@
         <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </providesport>
     </connectinterface>
-    <connectinterface id="connection_10">
-      <usesport>
-        <usesidentifier>dataFloat_Out</usesidentifier>
-        <componentinstantiationref refid="TuneFilterDecimate_2"/>
-      </usesport>
-      <providesport>
-        <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="psk_soft_1"/>
-      </providesport>
-    </connectinterface>
     <connectinterface id="connection_11">
       <usesport>
         <usesidentifier>dataShort_out</usesidentifier>
@@ -330,17 +355,27 @@
       </usesport>
       <providesport>
         <providesidentifier>dataShort_in</providesidentifier>
-        <componentinstantiationref refid="DifferentialDecoder_1"/>
+        <componentinstantiationref refid="RBDSDecoder_1"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_10">
+      <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="fastfilter_2"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="psk_soft_1"/>
       </providesport>
     </connectinterface>
     <connectinterface id="connection_12">
       <usesport>
-        <usesidentifier>dataShort_out</usesidentifier>
-        <componentinstantiationref refid="DifferentialDecoder_1"/>
+        <usesidentifier>dataFloat_Out</usesidentifier>
+        <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </usesport>
       <providesport>
-        <providesidentifier>dataShort_in</providesidentifier>
-        <componentinstantiationref refid="RBDSDecoder_1"/>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="fastfilter_2"/>
       </providesport>
     </connectinterface>
   </connections>
