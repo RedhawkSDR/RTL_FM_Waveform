@@ -206,42 +206,54 @@
         <componentproperties>
           <simplesequenceref refid="realFilterCoefficients">
             <values>
-              <value>-4.17856731714e-18</value>
-              <value>0.00391067678624</value>
-              <value>6.82484994444e-18</value>
-              <value>-0.00633157193963</value>
-              <value>1.62006669626e-17</value>
-              <value>0.0113063784636</value>
-              <value>-7.01900795452e-17</value>
-              <value>-0.0235172672043</value>
-              <value>5.45908246266e-17</value>
-              <value>0.0646724848119</value>
-              <value>-1.12105278128e-16</value>
-              <value>-0.388034908872</value>
+              <value>-4.1785674E-18</value>
+              <value>0.0039106766</value>
+              <value>6.82485E-18</value>
+              <value>-0.006331572</value>
+              <value>1.6200666E-17</value>
+              <value>0.011306378</value>
+              <value>-7.019008E-17</value>
+              <value>-0.023517268</value>
+              <value>5.4590823E-17</value>
+              <value>0.064672485</value>
+              <value>-1.1210527E-16</value>
+              <value>-0.3880349</value>
               <value>-1.0</value>
-              <value>-1.35812218105</value>
+              <value>-1.3581222</value>
               <value>-1.0</value>
               <value>0.0</value>
               <value>1.0</value>
-              <value>1.35812218105</value>
+              <value>1.3581222</value>
               <value>1.0</value>
-              <value>0.388034908872</value>
-              <value>1.12105278128e-16</value>
-              <value>-0.0646724848119</value>
-              <value>-5.45908246266e-17</value>
-              <value>0.0235172672043</value>
-              <value>7.01900795452e-17</value>
-              <value>-0.0113063784636</value>
-              <value>-1.62006669626e-17</value>
-              <value>0.00633157193963</value>
-              <value>-6.82484994444e-18</value>
-              <value>-0.00391067678624</value>
-              <value>4.17856731714e-18</value>
+              <value>0.3880349</value>
+              <value>1.1210527E-16</value>
+              <value>-0.064672485</value>
+              <value>-5.4590823E-17</value>
+              <value>0.023517268</value>
+              <value>7.019008E-17</value>
+              <value>-0.011306378</value>
+              <value>-1.6200666E-17</value>
+              <value>0.006331572</value>
+              <value>-6.82485E-18</value>
+              <value>-0.0039106766</value>
+              <value>4.1785674E-18</value>
             </values>
           </simplesequenceref>
         </componentproperties>
         <findcomponent>
           <namingservice name="fastfilter_2"/>
+        </findcomponent>
+      </componentinstantiation>
+    </componentplacement>
+    <componentplacement>
+      <componentfileref refid="ArbitraryRateResampler_81f3d546-9d03-4e4b-b101-ba766132da33"/>
+      <componentinstantiation id="ArbitraryRateResampler_2" startorder="36">
+        <usagename>ArbitraryRateResampler_2</usagename>
+        <componentproperties>
+          <simpleref refid="outputRate" value="9500.0"/>
+        </componentproperties>
+        <findcomponent>
+          <namingservice name="ArbitraryRateResampler_2"/>
         </findcomponent>
       </componentinstantiation>
     </componentplacement>
@@ -370,12 +382,22 @@
     </connectinterface>
     <connectinterface id="connection_12">
       <usesport>
+        <usesidentifier>dataFloat_out</usesidentifier>
+        <componentinstantiationref refid="ArbitraryRateResampler_2"/>
+      </usesport>
+      <providesport>
+        <providesidentifier>dataFloat_in</providesidentifier>
+        <componentinstantiationref refid="fastfilter_2"/>
+      </providesport>
+    </connectinterface>
+    <connectinterface id="connection_13">
+      <usesport>
         <usesidentifier>dataFloat_Out</usesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </usesport>
       <providesport>
         <providesidentifier>dataFloat_in</providesidentifier>
-        <componentinstantiationref refid="fastfilter_2"/>
+        <componentinstantiationref refid="ArbitraryRateResampler_2"/>
       </providesport>
     </connectinterface>
   </connections>
