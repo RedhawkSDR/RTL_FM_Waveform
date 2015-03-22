@@ -268,7 +268,7 @@
         <componentinstantiationref refid="NOOP_1"/>
       </usesport>
       <providesport>
-        <providesidentifier>dataFloat_In</providesidentifier>
+        <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_1"/>
       </providesport>
     </connectinterface>
@@ -284,7 +284,7 @@
     </connectinterface>
     <connectinterface id="connection_2">
       <usesport>
-        <usesidentifier>dataFloat_Out</usesidentifier>
+        <usesidentifier>dataFloat_out</usesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_1"/>
       </usesport>
       <providesport>
@@ -322,7 +322,7 @@
     </connectinterface>
     <connectinterface id="connection_3">
       <usesport>
-        <usesidentifier>dataFloat_Out</usesidentifier>
+        <usesidentifier>dataFloat_out</usesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_1"/>
       </usesport>
       <providesport>
@@ -356,7 +356,7 @@
         <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
       </usesport>
       <providesport>
-        <providesidentifier>dataFloat_In</providesidentifier>
+        <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </providesport>
     </connectinterface>
@@ -392,7 +392,7 @@
     </connectinterface>
     <connectinterface id="connection_13">
       <usesport>
-        <usesidentifier>dataFloat_Out</usesidentifier>
+        <usesidentifier>dataFloat_out</usesidentifier>
         <componentinstantiationref refid="TuneFilterDecimate_2"/>
       </usesport>
       <providesport>

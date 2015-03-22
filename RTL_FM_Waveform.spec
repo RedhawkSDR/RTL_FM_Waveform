@@ -17,7 +17,8 @@ Source: %{name}-%{version}.tar.gz
 # Require the controller whose SPD is referenced
 Requires: FrontEndController
 # Require each referenced component
-Requires: TuneFilterDecimate NOOP psd >= 1.1 fastfilter ArbitraryRateResampler FrontEndController RBDSDecoder AmFmPmBasebandDemod psk_soft
+Requires: TuneFilterDecimate >= 2.0
+Requires: NOOP psd >= 1.1 fastfilter ArbitraryRateResampler FrontEndController RBDSDecoder AmFmPmBasebandDemod psk_soft
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
