@@ -326,7 +326,7 @@
         <componentinstantiationref refid="TuneFilterDecimate_1"/>
       </usesport>
       <providesport>
-        <providesidentifier>dataFloat_In</providesidentifier>
+        <providesidentifier>dataFloat_in</providesidentifier>
         <componentinstantiationref refid="AmFmPmBasebandDemod_1"/>
       </providesport>
     </connectinterface>
