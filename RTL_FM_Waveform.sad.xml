@@ -40,6 +40,7 @@
             <simpleref refid="Ripple" value="0.5"/>
           </structref>
           <simpleref refid="FilterBW" value="256000.0"/>
+          <simpleref refid="TuneMode" value="IF"/>
           <simpleref refid="DesiredOutputRate" value="256000.0"/>
         </componentproperties>
         <findcomponent>
