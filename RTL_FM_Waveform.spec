@@ -17,9 +17,7 @@ Source: %{name}-%{version}.tar.gz
 # Require the controller whose SPD is referenced
 Requires: FrontEndController
 # Require each referenced component
-Requires: TuneFilterDecimate >= 2.0
-Requires: AmFmPmBasebandDemod >= 2.0
-Requires: NOOP psd >= 1.1 fastfilter ArbitraryRateResampler FrontEndController RBDSDecoder psk_soft
+Requires: FrontEndController NOOP rh.psd rh.TuneFilterDecimate rh.AmFmPmBasebandDemod rh.fastfilter rh.ArbitraryRateResampler rh.RBDSDecoder rh.psk_soft
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
@@ -30,10 +28,10 @@ BuildRoot: %{_tmppath}/%{name}-%{version}
 
 %install
 %__rm -rf $RPM_BUILD_ROOT
-%__mkdir_p "$RPM_BUILD_ROOT%{_prefix}/dom/waveforms/%{name}"
-%__install -m 644 RTL_FM_Waveform.sad.xml $RPM_BUILD_ROOT%{_prefix}/dom/waveforms/%{name}/RTL_FM_Waveform.sad.xml
+%__mkdir_p "$RPM_BUILD_ROOT%{_prefix}/dom/waveforms/RTL_FM_Waveform"
+%__install -m 644 RTL_FM_Waveform.sad.xml $RPM_BUILD_ROOT%{_prefix}/dom/waveforms/RTL_FM_Waveform/RTL_FM_Waveform.sad.xml
 
 %files
 %defattr(-,redhawk,redhawk)
-%dir %{_prefix}/dom/waveforms/%{name}
-%{_prefix}/dom/waveforms/%{name}/RTL_FM_Waveform.sad.xml
+%dir %{_prefix}/dom/waveforms/RTL_FM_Waveform
+%{_prefix}/dom/waveforms/RTL_FM_Waveform/RTL_FM_Waveform.sad.xml
